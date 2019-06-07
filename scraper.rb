@@ -1,4 +1,3 @@
-require 'scraperwiki'
-require File.dirname(__FILE__) + '/lib_icon_rest_xml/scraper'
+require "icon_scraper"
 
-scrape_icon_rest_xml("http://icon.gtcc.nsw.gov.au/eplanning/Pages/XC.Track/SearchApplication.aspx", "d=last14days&k=LodgementDate&t=290&o=xml")
+IconScraper.rest_xml("http://icon.gtcc.nsw.gov.au/eplanning/Pages/XC.Track/SearchApplication.aspx", "d=last14days&k=LodgementDate&t=290&o=xml")
